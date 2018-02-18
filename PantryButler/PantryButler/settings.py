@@ -56,6 +56,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'PantryButler/views'),
+            os.path.join(BASE_DIR, 'PantryButler/public'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
