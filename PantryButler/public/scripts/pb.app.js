@@ -1,3 +1,6 @@
 new Vue({
-  el: '#example'
+  el: '#example',
+  data: {
+    message: "test"
+  }
 })
