@@ -12,6 +12,11 @@
             <plan-component></plan-component>
             <recipes-component></recipes-component>
             <list-component></list-component>
+
+            <!-- data from Vue instance shows up with a directive, but not through mustache brackets: -->
+            <div v-text="message"></div>
+            <div>{{ message }}</div>
+            
         </div>
 
         <!-- Container -->
@@ -20,10 +25,12 @@
 
         <script src="/public/scripts/vue.min.js"></script>
 
+        <!-- components to be registered: -->
         <script src="/public/views/inventory/pb.inv.component.js"></script>
         <script src="/public/views/plan/pb.plan.component.js"></script>
         <script src="/public/views/recipes/pb.recipes.component.js"></script>
         <script src="/public/views/shoppinglist/pb.list.component.js"></script>
+        <!-- then root Vue instance is instanciated: -->
         <script src="/public/scripts/pb.app.js"></script>
 
     </body>

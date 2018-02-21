@@ -1,6 +1,4 @@
 new Vue({
   el: '#example',
-  data: {
-    message: "test"
-  }
+  data: {message: "testing string"}
 })
